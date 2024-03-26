@@ -42,9 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final String _tokenUrl =
       'https://msdfgovqab2cstg.b2clogin.com/msdfgovqab2cstg.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_sokoon';
   late String _idToken;
-  late String _refreshToken;
-  late String _accessToken;
-  late String _accessTokenExpiration;
   late String _displayName = "";
   String _email = "";
   late Map<String, dynamic>? _jwt = null;
@@ -113,10 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _processAuthTokenResponse(AuthorizationTokenResponse response) {
     setState(() {
-      _accessToken = response.accessToken ?? '';
-      _refreshToken = response.refreshToken ?? '';
-      _accessTokenExpiration =
-          response.accessTokenExpirationDateTime?.toIso8601String() ?? '';
       _idToken = response.idToken ?? '';
 
       // Parse the JWT regardless of _idToken being null or not
