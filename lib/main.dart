@@ -34,9 +34,9 @@ class _MyHomePageState extends State<MyHomePage> {
   FlutterAppAuth appAuth = const FlutterAppAuth();
   final String _clientId = '5d9c02ca-d3a8-4981-930a-74ae56d428e3';
   final String _redirectUrl =
-      'https://MSDFGOVQAB2CStg.b2clogin.com/oauth2/nativeclient';
+      'https://MSDFGOVQAB2CStg.b2clogin.com/oauth2/nativeclient/';
   final String _discoveryURL =
-      'https://msdfgovqab2cstg.b2clogin.com/MSDFGOVQAB2CStg.onmicrosoft.com/<policy-name>/v2.0/.well-known/openid-configuration?p=B2C_1_sokoon';
+      'https://msdfgovqab2cstg.b2clogin.com/MSDFGOVQAB2CStg.onmicrosoft.com/B2C_1_sokoon/v2.0/.well-known/openid-configuration/';
   final String _authorizeUrl =
       'https://msdfgovqab2cstg.b2clogin.com/MSDFGOVQAB2CStg.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_sokoon';
   final String _tokenUrl =
