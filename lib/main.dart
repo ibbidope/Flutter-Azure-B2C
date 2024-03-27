@@ -104,6 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
       );
       if (result != null) {
         _processAuthTokenResponse(result);
+        // Update UI to show user info and logout button
+        setState(() {
+          _jwt = parseJwt(result.idToken!);
+        });
       }
     } catch (e) {
       print(e);
