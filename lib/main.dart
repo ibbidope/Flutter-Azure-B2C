@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final String _tokenUrl =
       'https://msdfgovqab2cstg.b2clogin.com/msdfgovqab2cstg.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_sokoon';
   late String _idToken;
-  late String _displayName = "";
+  String _displayName = "";
   String _email = "";
   late Map<String, dynamic>? _jwt = null;
   final List<String> _scopes = ['openid'];
